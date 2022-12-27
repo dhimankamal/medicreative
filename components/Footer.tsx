@@ -19,10 +19,9 @@ const Footer: NextPage<Props> = ({}) => {
             </div>
             <div className="text-center mt-6 md:mt-0">
               <p className="mb-0">
-                © Techwind. Design with{" "}
-                <i className="mdi mdi-heart text-red-600" /> by{" "}
+                © Medicreative. Design by 
                 <a href="https://shreethemes.in/" className="text-reset">
-                  Shreethemes
+                  {" "}kamal
                 </a>
                 .
               </p>
