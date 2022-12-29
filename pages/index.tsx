@@ -3,10 +3,12 @@ import { Inter } from "@next/font/google";
 import HeroSection from "components/HeroSection";
 import Services from "components/Services";
 import Testimonial from "components/Testimonial";
+import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+
   return (
     <>
       <Head>

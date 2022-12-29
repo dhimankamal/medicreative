@@ -1,15 +1,16 @@
 import Header from "components/Header";
 import { NextPage } from "next";
 
-interface Props {}
+interface Props {
+}
 
 const Ourwork: NextPage<Props> = ({}) => {
   return (
     <>
-    <Header title="Our work"/>
+      <Header title="Our work" />
       <section className="relative md:py-24 py-16">
         <div className="container">
-          <div className="grid grid-cols-1 items-center gap-[30px]">
+          {/* <div className="grid grid-cols-1 items-center gap-[30px]">
             <div className="filters-group-wrap text-center">
               <div className="filters-group">
                 <ul className="mb-0 list-none container-filter-border-bottom filter-options">
@@ -46,7 +47,7 @@ const Ourwork: NextPage<Props> = ({}) => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
           {/*grid*/}
           <div
             id="grid"
@@ -513,5 +514,6 @@ const Ourwork: NextPage<Props> = ({}) => {
     </>
   );
 };
+
 
 export default Ourwork;

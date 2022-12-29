@@ -7,8 +7,8 @@ interface Props {
 const Header: NextPage<Props> = ({ title }) => {
   return (
     <>
-      <section className="relative table w-full py-36 bg-center bg-no-repeat">
-        <div className="absolute inset-0 bg-black opacity-25" />
+      <section className="relative table w-full py-36 bg-center bg-no-repeat bg-inner">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black" />
         <div className="container">
           <div className="grid grid-cols-1 pb-8 text-center mt-10">
             <h3 className="md:text-4xl text-3xl md:leading-normal tracking-wide leading-normal font-medium text-white">
