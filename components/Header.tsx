@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Link from "next/link";
 
 interface Props {
   title: string;
@@ -21,7 +22,7 @@ const Header: NextPage<Props> = ({ title }) => {
         <div className="absolute text-center z-10 bottom-5 right-0 left-0 mx-3">
           <ul className="breadcrumb tracking-[0.5px] breadcrumb-light mb-0 inline-block">
             <li className="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white">
-              <a href="index.html">Medicreative</a>
+              <Link href="/">Medicreatives</Link>
             </li>
             <li
               className="inline breadcrumb-item uppercase text-[13px] font-bold duration-500 ease-in-out text-white"

@@ -3513,7 +3513,6 @@ h1,  h2,  h3,  h4,  h5,  h6,  .h1,  .h2,  .h3,  .h4,  .h5,  .h6{
   line-height: 1.5rem !important;
   letter-spacing: 1px !important;
   --tw-text-opacity: 1 !important;
-  color: rgb(22 28 45 / var(--tw-text-opacity)) !important;
 }
 .dark #topnav .navigation-menu > li > a{
   --tw-text-opacity: 1 !important;
@@ -3523,10 +3522,7 @@ h1,  h2,  h3,  h4,  h5,  h6,  .h1,  .h2,  .h3,  .h4,  .h5,  .h6{
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
 }
-#topnav .navigation-menu > li:hover > a,  #topnav .navigation-menu > li.active > a{
-  --tw-text-opacity: 1 !important;
-  color: rgb(79 70 229 / var(--tw-text-opacity)) !important;
-}
+
 .dark #topnav .navigation-menu > li:hover > a, .dark  #topnav .navigation-menu > li.active > a{
   --tw-text-opacity: 1 !important;
   color: rgb(79 70 229 / var(--tw-text-opacity)) !important;
@@ -3841,10 +3837,7 @@ h1,  h2,  h3,  h4,  h5,  h6,  .h1,  .h2,  .h3,  .h4,  .h5,  .h6{
     --tw-border-opacity: 1;
     border-color: rgb(79 70 229 / var(--tw-border-opacity));
   }
-  #topnav .navigation-menu > li:hover > a,  #topnav .navigation-menu > li.active > a{
-    --tw-text-opacity: 1 !important;
-    color: rgb(79 70 229 / var(--tw-text-opacity)) !important;
-  }
+ 
   .dark #topnav .navigation-menu > li:hover > a, .dark  #topnav .navigation-menu > li.active > a{
     --tw-text-opacity: 1 !important;
     color: rgb(79 70 229 / var(--tw-text-opacity)) !important;

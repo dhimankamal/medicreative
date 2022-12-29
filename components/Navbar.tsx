@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { useScrollPosition } from "utils/useScrollPosition";
+import { useRouter } from "next/router";
 
 interface Props {}
 
@@ -11,6 +12,7 @@ interface MenuData {
 }
 
 const Navbar: NextPage<Props> = ({}) => {
+  const router = useRouter();
   const scrollPosition = useScrollPosition();
 
   const menuData: MenuData[] = [
@@ -30,15 +32,19 @@ const Navbar: NextPage<Props> = ({}) => {
   return (
     <nav
       id="topnav"
-      className={`defaultscroll is-sticky bg-white ${
-        scrollPosition > 0 ? "shadow" : "shadow-none"
-      } transition-all`}
+      className={`defaultscroll is-sticky ${
+        scrollPosition > 100 ? "shadow bg-white" : "shadow-none"
+      } transition-all duration-700`}
     >
       <div className="container flex justify-between items-center transition-all">
         {/* Logo container*/}
-        <a className="logo pl-0" href="index.html">
+        <Link className="logo pl-0" href="/">
           <Image
-            src="/assets/logo-dark.svg"
+            src={
+              router.pathname == "/" || scrollPosition > 100
+                ? "/assets/logo-dark.svg"
+                : "/assets/logo-white.svg"
+            }
             className="inline-block dark:hidden transition-all"
             alt=""
             width={scrollPosition > 0 ? 80 : 120}
@@ -49,7 +55,7 @@ const Navbar: NextPage<Props> = ({}) => {
             className="hidden dark:inline-block"
             alt=""
           /> */}
-        </a>
+        </Link>
         {/* End Logo container*/}
         <div className="menu-extras">
           <div className="menu-item">
@@ -72,7 +78,16 @@ const Navbar: NextPage<Props> = ({}) => {
           <ul className="navigation-menu">
             {menuData.map(value => (
               <li key={value.name.replaceAll(" ", "")}>
-                <Link href={value.href} className="sub-menu-item">
+                <Link
+                  href={value.href}
+                  className={`sub-menu-item transition-all duration-500 ${
+                    router.pathname == value.href ? "opacity-100" : "opacity-50"
+                  } ${
+                    router.pathname == "/" || scrollPosition > 100
+                      ? "!text-black"
+                      : "!text-white"
+                  }`}
+                >
                   {value.name}
                 </Link>
               </li>
