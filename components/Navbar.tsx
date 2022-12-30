@@ -58,7 +58,7 @@ const Navbar: NextPage<Props> = ({}) => {
           />
           <Image
             src={"/assets/logo-dark.svg"}
-            className="inline-block dark:hidden transition-all duration-500"
+            className="inline-block md:hidden transition-all duration-500"
             alt=""
             width={scrollPosition > 100 ? 80 : 120}
             height={0}
