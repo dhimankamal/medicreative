@@ -11,7 +11,7 @@ const ContactUs: NextPage<Props> = ({}) => {
           Available for freelance projects
         </span>
         <h3 className="md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
-          Do you have designing project? <br /> Let's talk.
+          Do you have designing project? <br /> Lets talk.
         </h3>
         <div className="mt-6">
           <Link
