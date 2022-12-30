@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import Image from "next/image";
+import { companyInfo } from "utils/data";
 
 interface Props {}
 
@@ -20,16 +21,16 @@ const Footer: NextPage<Props> = ({}) => {
                 />
               </a>
             </div>
-            <div className="text-center mt-6 md:mt-0">
-              <p className="mb-0">
-                © Medicreative. Design by 
+            <div className="text-center mt-0 md:mt-0">
+              <p className="mb-0 capitalize">
+                © {companyInfo.name}. Design by 
                 <a href="https://shreethemes.in/" className="text-reset">
                   {" "}kamal
                 </a>
                 .
               </p>
             </div>
-            <ul className="list-none md:text-right text-center mt-6 md:mt-0">
+            <ul className="list-none md:text-right text-center my-2 md:mt-0">
               <li className="inline">
                 <a
                   href="https://1.envato.market/techwind"

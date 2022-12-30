@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useScrollPosition } from "utils/useScrollPosition";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 interface Props {}
 
@@ -14,6 +15,11 @@ interface MenuData {
 const Navbar: NextPage<Props> = ({}) => {
   const router = useRouter();
   const scrollPosition = useScrollPosition();
+  const [showMobileNavbar, setshowMobileNavbar] = useState(false);
+
+  useEffect(() => {
+    setshowMobileNavbar(false);
+  }, [router.pathname]);
 
   const menuData: MenuData[] = [
     {
@@ -45,35 +51,46 @@ const Navbar: NextPage<Props> = ({}) => {
                 ? "/assets/logo-dark.svg"
                 : "/assets/logo-white.svg"
             }
-            className="inline-block dark:hidden transition-all"
+            className="hidden md:inline-block transition-all duration-500"
             alt=""
-            width={scrollPosition > 0 ? 80 : 120}
+            width={scrollPosition > 100 ? 80 : 120}
             height={0}
           />
-          {/* <img
-            src="/assets/images/logo-light.png"
-            className="hidden dark:inline-block"
+          <Image
+            src={"/assets/logo-dark.svg"}
+            className="inline-block dark:hidden transition-all duration-500"
             alt=""
-          /> */}
+            width={scrollPosition > 100 ? 80 : 120}
+            height={0}
+          />
         </Link>
         {/* End Logo container*/}
         <div className="menu-extras">
           <div className="menu-item">
             {/* Mobile menu toggle*/}
-            <a className="navbar-toggle" id="isToggle">
+            <button
+              className="navbar-toggle"
+              id="isToggle"
+              onClick={() => setshowMobileNavbar(!showMobileNavbar)}
+            >
               <div className="lines">
                 <span />
                 <span />
                 <span />
               </div>
-            </a>
+            </button>
             {/* End mobile menu toggle*/}
           </div>
         </div>
         {/*Login button Start*/}
 
         {/*Login button End*/}
-        <div id="navigation">
+        <div
+          id="navigation"
+          className={`transition-all duration-500 ${
+            scrollPosition < 100 ? "!top-32" : ""
+          } ${showMobileNavbar ? "open" : ""}`}
+        >
           {/* Navigation Menu*/}
           <ul className="navigation-menu">
             {menuData.map(value => (
@@ -85,7 +102,7 @@ const Navbar: NextPage<Props> = ({}) => {
                   } ${
                     router.pathname == "/" || scrollPosition > 100
                       ? "!text-black"
-                      : "!text-white"
+                      : "md:!text-white"
                   }`}
                 >
                   {value.name}

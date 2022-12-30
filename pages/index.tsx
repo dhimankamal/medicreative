@@ -4,6 +4,7 @@ import HeroSection from "components/HeroSection";
 import Services from "components/Services";
 import Testimonial from "components/Testimonial";
 import { useEffect } from "react";
+import ContactUs from "components/ContactUs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,10 +18,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className="pb-16">
         <HeroSection />
         <Services />
-        {/* <Testimonial /> */}
+        <Testimonial />
+        <ContactUs />
       </main>
     </>
   );
