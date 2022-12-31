@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { companyInfo } from "utils/data";
 
 interface Props {}
@@ -24,99 +25,99 @@ const Footer: NextPage<Props> = ({}) => {
             <div className="text-center mt-0 md:mt-0">
               <p className="mb-0 capitalize">
                 © {companyInfo.name}. Design by 
-                <a href="https://shreethemes.in/" className="text-reset">
+                <Link href="/" className="text-reset">
                   {" "}kamal
-                </a>
+                </Link>
                 .
               </p>
             </div>
             <ul className="list-none md:text-right text-center my-2 md:mt-0">
-              <li className="inline">
-                <a
-                  href="https://1.envato.market/techwind"
+              {/* <li className="inline">
+                <Link
+                  href="/"
                   className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
                 >
                   <i
                     className="uil uil-shopping-cart align-middle"
                     title="Buy Now"
                   />
-                </a>
-              </li>
-              <li className="inline">
-                <a
-                  href="https://dribbble.com/shreethemes"
+                </Link>
+              </li> */}
+              {/* <li className="inline">
+                <Link
+                  href="/"
                   className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
                 >
                   <i
                     className="uil uil-dribbble align-middle"
                     title="dribbble"
                   />
-                </a>
-              </li>
+                </Link>
+              </li> */}
               <li className="inline">
-                <a
-                  href="https://www.behance.net/shreethemes"
+                <Link
+                  href="https://www.behance.net/medicreatives"
                   className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
                 >
                   <i className="uil uil-behance" title="Behance" />
-                </a>
+                </Link>
               </li>
-              <li className="inline">
-                <a
-                  href="http://linkedin.com/company/shreethemes"
+              {/* <li className="inline">
+                <Link
+                  href="/"
                   className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
                 >
                   <i className="uil uil-linkedin" title="Linkedin" />
-                </a>
-              </li>
+                </Link>
+              </li> */}
               <li className="inline">
-                <a
-                  href="https://www.facebook.com/shreethemes"
+                <Link
+                  href="https://www.facebook.com/people/Medicreatives/100089166789018/"
                   className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
                 >
                   <i
                     className="uil uil-facebook-f align-middle"
                     title="facebook"
                   />
-                </a>
+                </Link>
               </li>
               <li className="inline">
-                <a
-                  href="https://www.instagram.com/shreethemes/"
+                <Link
+                  href="https://www.instagram.com/_medicreatives_/"
                   className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
                 >
                   <i
                     className="uil uil-instagram align-middle"
                     title="instagram"
                   />
-                </a>
+                </Link>
               </li>
-              <li className="inline">
-                <a
-                  href="https://twitter.com/shreethemes"
+              {/* <li className="inline">
+                <Link
+                  href="/"
                   className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
                 >
                   <i className="uil uil-twitter align-middle" title="twitter" />
-                </a>
-              </li>
+                </Link>
+              </li> */}
               <li className="inline">
                 <a
-                  href="mailto:support@shreethemes.in"
+                  href={`mailto:${companyInfo.email}`}
                   className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
                 >
                   <i className="uil uil-envelope align-middle" title="email" />
                 </a>
               </li>
               <li className="inline">
-                <a
-                  href="https://forms.gle/QkTueCikDGqJnbky9"
+                <Link
+                  href="/contact"
                   className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
                 >
                   <i
                     className="uil uil-file align-middle"
                     title="customization"
                   />
-                </a>
+                </Link>
               </li>
             </ul>
             {/*end icon*/}
