@@ -18,13 +18,12 @@ const Testimonial: NextPage<Props> = ({}) => {
         </div>
         {/*end grid*/}
         <div className="grid grid-cols-1 md:grid-cols-3 mt-8">
-          <div className="tiny-slide text-center">
-            <div className="customer-testi">
+          <div className="text-center">
+            <div className="">
               <div className="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900">
                 <i className="mdi mdi-format-quote-open mdi-48px text-indigo-600" />
                 <p className="text-slate-400">
-                  Thus, Lorem Ipsum has only limited suitability as a visual
-                  filler for German texts.
+                Medicreatives has a wonderful team which is creative and innovative. The suggestions and posters they made for my hospital were liked by everyone instantly.
                 </p>
                 <ul className="list-none mb-0 text-amber-400 mt-3">
                   <li className="inline">
@@ -46,17 +45,17 @@ const Testimonial: NextPage<Props> = ({}) => {
               </div>
               <div className="text-center mt-5">
                 <img
-                  src="assets/images/client/04.jpg"
+                  src="assets/images/manisha.jpeg"
                   className="h-14 w-14 rounded-full shadow-md mx-auto"
                   alt=""
                 />
-                <h6 className="mt-2 font-semibold">Smith Vodka</h6>
-                <span className="text-slate-400 text-sm">Manager</span>
+                <h6 className="mt-2 font-semibold">Dr. Manisha Jain</h6>
+                <span className="text-slate-400 text-sm">Doctor</span>
               </div>
             </div>
           </div>
           <div className="tiny-slide text-center">
-            <div className="customer-testi">
+            <div>
               <div className="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900">
                 <i className="mdi mdi-format-quote-open mdi-48px text-indigo-600" />
                 <p className="text-slate-400">
@@ -93,7 +92,7 @@ const Testimonial: NextPage<Props> = ({}) => {
             </div>
           </div>
           <div className="tiny-slide text-center">
-            <div className="customer-testi">
+            <div>
               <div className="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900">
                 <i className="mdi mdi-format-quote-open mdi-48px text-indigo-600" />
                 <p className="text-slate-400">
