@@ -41,7 +41,7 @@ export default function handler(
       res.status(500).json({ error: err });
     } else {
       const mailOptions: MailOptions = {
-        from: "no-reply@medicreatives.net",
+        from: "Medicreatives<no-reply@medicreatives.net>",
         to: req.body.email,
         subject: `Contact Medicreatives`,
         text: "Contact Medicreatives",
