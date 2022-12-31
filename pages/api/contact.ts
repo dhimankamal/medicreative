@@ -43,8 +43,8 @@ export default function handler(
       const mailOptions: MailOptions = {
         from: "no-reply@medicreatives.net",
         to: req.body.email,
-        subject: `thanks`,
-        text: "thanks",
+        subject: `Contact Medicreatives`,
+        text: "Contact Medicreatives",
         html: `<b> Thanks for being awesome! </b><br />
             We have received your message and would like to thank you for writing to us. If your inquiry is urgent, please use the telephone number listed below to talk to one of our staff members. <br />
         Otherwise, we will reply by email as soon as possible.<br /> <br />
