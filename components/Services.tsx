@@ -1,4 +1,5 @@
 import { NextPage } from 'next'
+import Link from 'next/link'
 
 interface Props {}
 
@@ -21,12 +22,12 @@ const Services: NextPage<Props> = ({}) => {
           <i className="uil uil-airplay" />
         </div>
         <div className="content mt-7">
-          <a
-            href="page-services.html"
+          <Link
+            href="/"
             className="title h5 text-lg font-medium hover:text-indigo-600"
           >
             Digital Marketing
-          </a>
+          </Link>
           <p className="text-slate-400 mt-3">
             The phrasal sequence of the Lorem Ipsum text is now so that many
           </p>
@@ -37,12 +38,12 @@ const Services: NextPage<Props> = ({}) => {
           <i className="uil uil-presentation-play" />
         </div>
         <div className="content mt-7">
-          <a
-            href=""
+          <Link
+            href="/"
             className="title h5 text-lg font-medium hover:text-red-600"
           >
             Video Production
-          </a>
+          </Link>
           <p className="text-slate-400 mt-3">
             The phrasal sequence of the Lorem Ipsum text is now so that many
           </p>
@@ -53,12 +54,12 @@ const Services: NextPage<Props> = ({}) => {
           <i className="uil uil-mobile-android" />
         </div>
         <div className="content mt-7">
-          <a
-            href=""
+          <Link
+            href="/"
             className="title h5 text-lg font-medium hover:text-emerald-600"
           >
             Web &amp; Mobile
-          </a>
+          </Link>
           <p className="text-slate-400 mt-3">
             The phrasal sequence of the Lorem Ipsum text is now so that many
           </p>
@@ -113,7 +114,7 @@ const Services: NextPage<Props> = ({}) => {
       <div className="md:col-span-6">
         <div className="md:ml-6">
           <p className="text-indigo-600 text-lg font-medium mb-4">
-            Web and mobile development
+            Graphic designing and web development
           </p>
           <h4 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">
             Analyze your entire market <br /> pricing &amp; stock availability
@@ -124,12 +125,12 @@ const Services: NextPage<Props> = ({}) => {
             work everyday.
           </p>
           <div className="mt-6">
-            <a
-              href=""
+            <Link
+              href="/contact"
               className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </div>

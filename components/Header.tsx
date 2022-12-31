@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Head from "next/head";
 import Link from "next/link";
 
 interface Props {
@@ -8,6 +9,10 @@ interface Props {
 const Header: NextPage<Props> = ({ title }) => {
   return (
     <>
+     <Head>
+        <title>Medicreative | {title}</title>
+      
+      </Head>
       <section className="relative table w-full py-36 bg-center bg-no-repeat bg-inner">
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black" />
         <div className="container">

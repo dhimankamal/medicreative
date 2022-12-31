@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import Link from "next/link";
 
 interface Props {}
 
@@ -26,17 +27,12 @@ const HeroSection: NextPage<Props> = ({}) => {
                 creative work everyday.
               </p>
               <div className="mt-6">
-                <a
-                  href="#!"
-                  data-type="youtube"
-                  data-id="yba7hPeTSjk"
-                  className="btn btn-icon rounded-full bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white lightbox"
+                <Link
+                  href="/contact"
+                  className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-full"
                 >
-                  <i data-feather="video" className="h-4 w-4" />
-                </a>
-                <span className="font-semibold ml-2 align-middle">
-                  Watch Now
-                </span>
+                  <i className="uil uil-phone" /> Contact us
+                </Link>
               </div>
             </div>
           </div>
