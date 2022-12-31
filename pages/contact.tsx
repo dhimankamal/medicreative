@@ -4,7 +4,6 @@ import { useRef, useState } from "react";
 import { companyInfo } from "utils/data";
 import { toast } from "react-toastify";
 import Link from "next/link";
-import Head from "next/head";
 
 interface Props {}
 
@@ -33,7 +32,7 @@ const Contact: NextPage<Props> = ({}) => {
           body: JSON.stringify(data),
         });
         if (res.status == 200) {
-          toast(`Message send successfully check your mail - ${email}`, {
+          toast(` We have received your message and would like to thank you for writing to us.`, {
             type: "success",
             position: "bottom-center",
           });

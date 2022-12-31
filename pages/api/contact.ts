@@ -24,7 +24,7 @@ export default function handler(
     secure: true,
   });
   const mailData: MailOptions = {
-    from: req.body.email,
+    from: "no-reply@medicreatives.net",
     to: "contact@medicreatives.net",
     subject: `Message From ${req.body.subject}`,
     text: req.body.comments,
@@ -41,7 +41,7 @@ export default function handler(
       res.status(500).json({ error: err });
     } else {
       const mailOptions: MailOptions = {
-        from: "Medicreative",
+        from: "no-reply@medicreatives.net",
         to: req.body.email,
         subject: `Contact Medicreatives`,
         text: "Contact Medicreatives",
