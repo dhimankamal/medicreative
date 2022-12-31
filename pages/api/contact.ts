@@ -15,7 +15,7 @@ export default function handler(
   let nodemailer = require("nodemailer");
   const transporter: Transporter = nodemailer.createTransport({
     port: 465,
-    host: "smtp.gmail.com",
+    host: "smtp.hostinger.com",
     auth: {
       user: process.env.EMAIL,
       pass: process.env.PASS,
@@ -23,8 +23,8 @@ export default function handler(
     secure: true,
   });
   const mailData: MailOptions = {
-    from: "dhimank966@gmail.com",
-    to: "dhimank079@gmail.com",
+    from: "no-reply@medicreatives.net",
+    to: "contact@medicreatives.net",
     subject: `Message From ${req.body.subject}`,
     text: req.body.comments,
     html:
@@ -40,7 +40,7 @@ export default function handler(
       res.status(500).json({ error: err });
     } else {
       const mailOptions: MailOptions = {
-        from: "dhimank966@gmail.com",
+        from: "no-reply@medicreatives.net",
         to: req.body.email,
         subject: `thanks`,
         text: "thanks",
