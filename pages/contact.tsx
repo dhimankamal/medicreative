@@ -1,6 +1,6 @@
 import Header from "components/Header";
 import { NextPage } from "next";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { companyInfo } from "utils/data";
 import { toast } from "react-toastify";
 
@@ -8,6 +8,8 @@ interface Props {}
 
 const Contact: NextPage<Props> = ({}) => {
   const [loading, setLoading] = useState(false);
+  const form = useRef<HTMLFormElement>(null);
+  
   const onsubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     setLoading(true);
     event.preventDefault();
@@ -33,6 +35,7 @@ const Contact: NextPage<Props> = ({}) => {
             type: "success",
             position: "bottom-center",
           });
+          form.current?.reset();
         } else {
           toast(`Error please try again`, {
             type: "error",
@@ -128,7 +131,7 @@ const Contact: NextPage<Props> = ({}) => {
                   <h3 className="mb-6 text-2xl leading-normal font-medium">
                     Get in touch !
                   </h3>
-                  <form onSubmit={onsubmit} id="myForm">
+                  <form onSubmit={onsubmit} ref={form} id="myForm">
                     <p className="mb-0" id="error-msg" />
                     <div id="simple-msg" />
                     <div className="grid lg:grid-cols-12 lg:gap-6">
