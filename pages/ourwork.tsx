@@ -53,377 +53,43 @@ const Ourwork: NextPage<Props> = ({}) => {
             id="grid"
             className="md:grid grid-cols-3 justify-center mx-auto mt-4"
           >
-            <div className="w-full p-4 picture-item" data-groups='["branding"]'>
-              <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
-                <img
-                  src="assets/images/portfolio/1.jpg"
-                  className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
-                  alt=""
-                />
-                <div className="absolute inset-2 group-hover:bg-white/90 dark:group-hover:bg-slate-900/90 transition duration-500 z-0 rounded-md" />
-                <div className="content transition-all duration-500">
-                  <div className="icon absolute z-10 hidden group-hover:block top-6 right-6 transition-all duration-500">
-                    <a
-                      href="assets/images/portfolio/1.jpg"
-                      className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"
-                    >
-                      <i className="uil uil-camera" />
-                    </a>
-                  </div>
-                  <div className="title absolute z-10 hidden group-hover:block bottom-6 left-6">
-                    <a
-                      href="portfolio-detail-three.html"
-                      className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out"
-                    >
-                      Mockup Collection
-                    </a>
-                    <p className="text-slate-400 mb-0">Abstract</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="w-full p-4 picture-item"
-              data-groups='["designing"]'
-            >
-              <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
-                <img
-                  src="assets/images/portfolio/2.jpg"
-                  className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
-                  alt=""
-                />
-                <div className="absolute inset-2 group-hover:bg-white/90 dark:group-hover:bg-slate-900/90 transition duration-500 z-0 rounded-md" />
-                <div className="content transition-all duration-500">
-                  <div className="icon absolute z-10 hidden group-hover:block top-6 right-6 transition-all duration-500">
-                    <a
-                      href="assets/images/portfolio/2.jpg"
-                      className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"
-                    >
-                      <i className="uil uil-camera" />
-                    </a>
-                  </div>
-                  <div className="absolute z-10 hidden group-hover:block bottom-6 left-6 transition-all duration-500">
-                    <a
-                      href="portfolio-detail-three.html"
-                      className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out"
-                    >
-                      Mockup Collection
-                    </a>
-                    <p className="text-slate-400 mb-0">Abstract</p>
+            {Array.from({ length: 15 }).map((_, i) => (
+              <div
+                key={i}
+                className="w-full p-4 picture-item"
+                data-groups='["branding"]'
+              >
+                <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
+                  <img
+                    src={`posters/poster${i+1}.jpg`}
+                    className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
+                    alt=""
+                  />
+                  <div className="absolute inset-2 group-hover:bg-white/90 dark:group-hover:bg-slate-900/90 transition duration-500 z-0 rounded-md" />
+                  <div className="content transition-all duration-500">
+                    <div className="icon absolute z-10 hidden group-hover:block top-6 right-6 transition-all duration-500">
+                      <a
+                        href={`posters/poster${i+1}.jpg`}
+                        className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"
+                      >
+                        <i className="uil uil-camera" />
+                      </a>
+                    </div>
+                    <div className="title absolute z-10 hidden group-hover:block bottom-6 left-6">
+                      <a
+                        href="portfolio-detail-three.html"
+                        className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out"
+                      >
+                        Graphic Design
+                      </a>
+                      <p className="text-slate-400 mb-0">Posters</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              className="w-full p-4 picture-item"
-              data-groups='["photography"]'
-            >
-              <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
-                <img
-                  src="assets/images/portfolio/3.jpg"
-                  className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
-                  alt=""
-                />
-                <div className="absolute inset-2 group-hover:bg-white/90 dark:group-hover:bg-slate-900/90 transition duration-500 z-0 rounded-md" />
-                <div className="content transition-all duration-500">
-                  <div className="icon absolute z-10 hidden group-hover:block top-6 right-6 transition-all duration-500">
-                    <a
-                      href="assets/images/portfolio/3.jpg"
-                      className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"
-                    >
-                      <i className="uil uil-camera" />
-                    </a>
-                  </div>
-                  <div className="absolute z-10 hidden group-hover:block bottom-6 left-6 transition-all duration-500">
-                    <a
-                      href="portfolio-detail-three.html"
-                      className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out"
-                    >
-                      Mockup Collection
-                    </a>
-                    <p className="text-slate-400 mb-0">Abstract</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="w-full p-4 picture-item"
-              data-groups='["development"]'
-            >
-              <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
-                <img
-                  src="assets/images/portfolio/4.jpg"
-                  className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
-                  alt=""
-                />
-                <div className="absolute inset-2 group-hover:bg-white/90 dark:group-hover:bg-slate-900/90 transition duration-500 z-0 rounded-md" />
-                <div className="content transition-all duration-500">
-                  <div className="icon absolute z-10 hidden group-hover:block top-6 right-6 transition-all duration-500">
-                    <a
-                      href="assets/images/portfolio/4.jpg"
-                      className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"
-                    >
-                      <i className="uil uil-camera" />
-                    </a>
-                  </div>
-                  <div className="absolute z-10 hidden group-hover:block bottom-6 left-6 transition-all duration-500">
-                    <a
-                      href="portfolio-detail-three.html"
-                      className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out"
-                    >
-                      Mockup Collection
-                    </a>
-                    <p className="text-slate-400 mb-0">Abstract</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-full p-4 picture-item" data-groups='["branding"]'>
-              <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
-                <img
-                  src="assets/images/portfolio/5.jpg"
-                  className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
-                  alt=""
-                />
-                <div className="absolute inset-2 group-hover:bg-white/90 dark:group-hover:bg-slate-900/90 transition duration-500 z-0 rounded-md" />
-                <div className="content transition-all duration-500">
-                  <div className="icon absolute z-10 hidden group-hover:block top-6 right-6 transition-all duration-500">
-                    <a
-                      href="assets/images/portfolio/5.jpg"
-                      className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"
-                    >
-                      <i className="uil uil-camera" />
-                    </a>
-                  </div>
-                  <div className="absolute z-10 hidden group-hover:block bottom-6 left-6 transition-all duration-500">
-                    <a
-                      href="portfolio-detail-three.html"
-                      className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out"
-                    >
-                      Mockup Collection
-                    </a>
-                    <p className="text-slate-400 mb-0">Abstract</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-full p-4 picture-item" data-groups='["branding"]'>
-              <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
-                <img
-                  src="assets/images/portfolio/6.jpg"
-                  className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
-                  alt=""
-                />
-                <div className="absolute inset-2 group-hover:bg-white/90 dark:group-hover:bg-slate-900/90 transition duration-500 z-0 rounded-md" />
-                <div className="content transition-all duration-500">
-                  <div className="icon absolute z-10 hidden group-hover:block top-6 right-6 transition-all duration-500">
-                    <a
-                      href="assets/images/portfolio/6.jpg"
-                      className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"
-                    >
-                      <i className="uil uil-camera" />
-                    </a>
-                  </div>
-                  <div className="absolute z-10 hidden group-hover:block bottom-6 left-6 transition-all duration-500">
-                    <a
-                      href="portfolio-detail-three.html"
-                      className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out"
-                    >
-                      Mockup Collection
-                    </a>
-                    <p className="text-slate-400 mb-0">Abstract</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="w-full p-4 picture-item"
-              data-groups='["designing"]'
-            >
-              <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
-                <img
-                  src="assets/images/portfolio/7.jpg"
-                  className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
-                  alt=""
-                />
-                <div className="absolute inset-2 group-hover:bg-white/90 dark:group-hover:bg-slate-900/90 transition duration-500 z-0 rounded-md" />
-                <div className="content transition-all duration-500">
-                  <div className="icon absolute z-10 hidden group-hover:block top-6 right-6 transition-all duration-500">
-                    <a
-                      href="assets/images/portfolio/7.jpg"
-                      className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"
-                    >
-                      <i className="uil uil-camera" />
-                    </a>
-                  </div>
-                  <div className="absolute z-10 hidden group-hover:block bottom-6 left-6 transition-all duration-500">
-                    <a
-                      href="portfolio-detail-three.html"
-                      className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out"
-                    >
-                      Mockup Collection
-                    </a>
-                    <p className="text-slate-400 mb-0">Abstract</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="w-full p-4 picture-item"
-              data-groups='["development"]'
-            >
-              <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
-                <img
-                  src="assets/images/portfolio/8.jpg"
-                  className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
-                  alt=""
-                />
-                <div className="absolute inset-2 group-hover:bg-white/90 dark:group-hover:bg-slate-900/90 transition duration-500 z-0 rounded-md" />
-                <div className="content transition-all duration-500">
-                  <div className="icon absolute z-10 hidden group-hover:block top-6 right-6 transition-all duration-500">
-                    <a
-                      href="assets/images/portfolio/8.jpg"
-                      className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"
-                    >
-                      <i className="uil uil-camera" />
-                    </a>
-                  </div>
-                  <div className="absolute z-10 hidden group-hover:block bottom-6 left-6 transition-all duration-500">
-                    <a
-                      href="portfolio-detail-three.html"
-                      className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out"
-                    >
-                      Mockup Collection
-                    </a>
-                    <p className="text-slate-400 mb-0">Abstract</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="w-full p-4 picture-item"
-              data-groups='["photography"]'
-            >
-              <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
-                <img
-                  src="assets/images/portfolio/20.jpg"
-                  className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
-                  alt=""
-                />
-                <div className="absolute inset-2 group-hover:bg-white/90 dark:group-hover:bg-slate-900/90 transition duration-500 z-0 rounded-md" />
-                <div className="content transition-all duration-500">
-                  <div className="icon absolute z-10 hidden group-hover:block top-6 right-6 transition-all duration-500">
-                    <a
-                      href="assets/images/portfolio/20.jpg"
-                      className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"
-                    >
-                      <i className="uil uil-camera" />
-                    </a>
-                  </div>
-                  <div className="absolute z-10 hidden group-hover:block bottom-6 left-6 transition-all duration-500">
-                    <a
-                      href="portfolio-detail-three.html"
-                      className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out"
-                    >
-                      Mockup Collection
-                    </a>
-                    <p className="text-slate-400 mb-0">Abstract</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="w-full p-4 picture-item"
-              data-groups='["photography"]'
-            >
-              <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
-                <img
-                  src="assets/images/portfolio/21.jpg"
-                  className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
-                  alt=""
-                />
-                <div className="absolute inset-2 group-hover:bg-white/90 dark:group-hover:bg-slate-900/90 transition duration-500 z-0 rounded-md" />
-                <div className="content transition-all duration-500">
-                  <div className="icon absolute z-10 hidden group-hover:block top-6 right-6 transition-all duration-500">
-                    <a
-                      href="assets/images/portfolio/21.jpg"
-                      className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"
-                    >
-                      <i className="uil uil-camera" />
-                    </a>
-                  </div>
-                  <div className="absolute z-10 hidden group-hover:block bottom-6 left-6 transition-all duration-500">
-                    <a
-                      href="portfolio-detail-three.html"
-                      className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out"
-                    >
-                      Mockup Collection
-                    </a>
-                    <p className="text-slate-400 mb-0">Abstract</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-full p-4 picture-item" data-groups='["branding"]'>
-              <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
-                <img
-                  src="assets/images/portfolio/22.jpg"
-                  className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
-                  alt=""
-                />
-                <div className="absolute inset-2 group-hover:bg-white/90 dark:group-hover:bg-slate-900/90 transition duration-500 z-0 rounded-md" />
-                <div className="content transition-all duration-500">
-                  <div className="icon absolute z-10 hidden group-hover:block top-6 right-6 transition-all duration-500">
-                    <a
-                      href="assets/images/portfolio/22.jpg"
-                      className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"
-                    >
-                      <i className="uil uil-camera" />
-                    </a>
-                  </div>
-                  <div className="absolute z-10 hidden group-hover:block bottom-6 left-6 transition-all duration-500">
-                    <a
-                      href="portfolio-detail-three.html"
-                      className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out"
-                    >
-                      Mockup Collection
-                    </a>
-                    <p className="text-slate-400 mb-0">Abstract</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-full p-4 picture-item" data-groups='["branding"]'>
-              <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
-                <img
-                  src="assets/images/portfolio/23.jpg"
-                  className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
-                  alt=""
-                />
-                <div className="absolute inset-2 group-hover:bg-white/90 dark:group-hover:bg-slate-900/90 transition duration-500 z-0 rounded-md" />
-                <div className="content transition-all duration-500">
-                  <div className="icon absolute z-10 hidden group-hover:block top-6 right-6 transition-all duration-500">
-                    <a
-                      href="assets/images/portfolio/23.jpg"
-                      className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"
-                    >
-                      <i className="uil uil-camera" />
-                    </a>
-                  </div>
-                  <div className="absolute z-10 hidden group-hover:block bottom-6 left-6 transition-all duration-500">
-                    <a
-                      href="portfolio-detail-three.html"
-                      className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out"
-                    >
-                      Mockup Collection
-                    </a>
-                    <p className="text-slate-400 mb-0">Abstract</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
-          <div className="grid md:grid-cols-12 grid-cols-1 mt-8">
+          {/* <div className="grid md:grid-cols-12 grid-cols-1 mt-8">
             <div className="md:col-span-12 text-center">
               <nav aria-label="Page navigation example">
                 <ul className="inline-flex items-center -space-x-px">
@@ -487,7 +153,7 @@ const Ourwork: NextPage<Props> = ({}) => {
                 </ul>
               </nav>
             </div>
-          </div>
+          </div> */}
         </div>
         {/*end container*/}
         <ContactUs />

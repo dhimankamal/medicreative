@@ -59,7 +59,7 @@ const Footer: NextPage<Props> = ({}) => {
                   href="https://www.behance.net/medicreatives"
                   className="btn btn-icon btn-sm border border-gray-800 rounded-md hover:border-indigo-600 dark:hover:border-indigo-600 hover:bg-indigo-600 dark:hover:bg-indigo-600"
                 >
-                  <i className="uil uil-behance" title="Behance" />
+                  <i className="uil uil-behance" title="behance" />
                 </Link>
               </li>
               {/* <li className="inline">
@@ -115,7 +115,7 @@ const Footer: NextPage<Props> = ({}) => {
                 >
                   <i
                     className="uil uil-file align-middle"
-                    title="customization"
+                    title="contact"
                   />
                 </Link>
               </li>
