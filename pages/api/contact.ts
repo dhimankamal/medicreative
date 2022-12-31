@@ -2,6 +2,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Transporter } from "nodemailer";
 import { MailOptions } from "nodemailer/lib/sendmail-transport";
+import { companyInfo } from "utils/data";
 
 type Data = {
   info?: unknown;
@@ -30,12 +31,12 @@ export default function handler(
     html:
       "Name - " +
       req.body.name +
-      "email - " +
+      "<br /> email - " +
       req.body.email +
-      "message - " +
+      "<br /> message - " +
       req.body.comments,
   };
-  transporter.sendMail(mailData, (err,info) => {
+  transporter.sendMail(mailData, (err, info) => {
     if (err) {
       res.status(500).json({ error: err });
     } else {
@@ -44,7 +45,14 @@ export default function handler(
         to: req.body.email,
         subject: `thanks`,
         text: "thanks",
-        html: "thanks for contact medicreatives",
+        html: `<b> Thanks for being awesome! </b><br />
+            We have received your message and would like to thank you for writing to us. If your inquiry is urgent, please use the telephone number listed below to talk to one of our staff members. <br />
+        Otherwise, we will reply by email as soon as possible.<br /> <br />
+        Talk to you soon, Medicreatives <br />
+        Contact us <br />
+        Phone - ${companyInfo.phone} <br />
+        Email - ${companyInfo.email}
+        `,
       };
       transporter.sendMail(mailOptions, (err, info) => {
         if (err) {
