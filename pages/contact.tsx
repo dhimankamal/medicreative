@@ -234,8 +234,8 @@ const Contact: NextPage<Props> = ({}) => {
       <div className="container-fluid relative">
         <div className="grid grid-cols-1">
           <div className="w-full leading-[0] border-0">
-            <iframe
-             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54891.38356444558!2d76.6623609940722!3d30.698393106117724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee906da6f81f%3A0x512998f16ce508d8!2sSahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1672500750995!5m2!1sen!2sin"
+           <iframe
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d768.5110056680032!2d76.70365836173778!3d30.685861764401682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef2c8e5b8503%3A0x88e4ebe68119679a!2sMedicreatives!5e0!3m2!1sen!2sin!4v1672543798643!5m2!1sen!2sin"
               style={{ border: 0 }}
               className="w-full h-[500px]"
             />

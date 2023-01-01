@@ -17,7 +17,7 @@ const Testimonial: NextPage<Props> = ({}) => {
           </p>
         </div>
         {/*end grid*/}
-        <div className="grid grid-cols-1 md:grid-cols-3 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 mt-8">
           <div className="text-center">
             <div className="">
               <div className="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900">
@@ -59,8 +59,7 @@ const Testimonial: NextPage<Props> = ({}) => {
               <div className="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900">
                 <i className="mdi mdi-format-quote-open mdi-48px text-indigo-600" />
                 <p className="text-slate-400">
-                  There is now an abundance of readable dummy texts. These are
-                  usually used when a text is required.
+                One of the best digital marketing in India, with all the latest innovations and ideas to boost up the business. Totally recommended 👍
                 </p>
                 <ul className="list-none mb-0 text-amber-400 mt-3">
                   <li className="inline">
@@ -82,52 +81,16 @@ const Testimonial: NextPage<Props> = ({}) => {
               </div>
               <div className="text-center mt-5">
                 <img
-                  src="assets/images/client/05.jpg"
+                  src="assets/images/arun.jpeg"
                   className="h-14 w-14 rounded-full shadow-md mx-auto"
                   alt=""
                 />
-                <h6 className="mt-2 font-semibold">Cristino Murfi</h6>
-                <span className="text-slate-400 text-sm">Manager</span>
+                <h6 className="mt-2 font-semibold">Dr. Arun Garg</h6>
+                <span className="text-slate-400 text-sm">Doctor</span>
               </div>
             </div>
           </div>
-          <div className="tiny-slide text-center">
-            <div>
-              <div className="content relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900">
-                <i className="mdi mdi-format-quote-open mdi-48px text-indigo-600" />
-                <p className="text-slate-400">
-                  According to most sources, Lorum Ipsum can be traced back to a
-                  text composed by Cicero.
-                </p>
-                <ul className="list-none mb-0 text-amber-400 mt-3">
-                  <li className="inline">
-                    <i className="mdi mdi-star" />
-                  </li>
-                  <li className="inline">
-                    <i className="mdi mdi-star" />
-                  </li>
-                  <li className="inline">
-                    <i className="mdi mdi-star" />
-                  </li>
-                  <li className="inline">
-                    <i className="mdi mdi-star" />
-                  </li>
-                  <li className="inline">
-                    <i className="mdi mdi-star" />
-                  </li>
-                </ul>
-              </div>
-              <div className="text-center mt-5">
-                <img
-                  src="assets/images/client/06.jpg"
-                  className="h-14 w-14 rounded-full shadow-md mx-auto"
-                  alt=""
-                />
-                <h6 className="mt-2 font-semibold">Cristino Murfi</h6>
-                <span className="text-slate-400 text-sm">Manager</span>
-              </div>
-            </div>
-          </div>
+         
         </div>
         {/*end grid*/}
       </div>
