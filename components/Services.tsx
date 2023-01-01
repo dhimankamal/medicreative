@@ -11,8 +11,8 @@ const Services: NextPage<Props> = ({}) => {
         Our Services
       </h3>
       <p className="text-slate-400 max-w-xl mx-auto">
-        Start working with Techwind that can provide everything you need to
-        generate awareness, drive traffic, connect.
+        Start working with medicreatives that can provide everything you need to
+        generate awareness, web development, connect.
       </p>
     </div>
     {/*end grid*/}
