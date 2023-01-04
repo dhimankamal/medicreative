@@ -14,6 +14,7 @@ export default function Home() {
     <>
       <Head>
         <title>Medicreative | Home</title>
+        <meta name="description" content="Medicreatives is a full-service digital agency that specializes in creating and maintaining websites for medical professionals."/>
       </Head>
       <main className="pb-16">
         <HeroSection />
