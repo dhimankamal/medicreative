@@ -1,5 +1,6 @@
 import ContactUs from "components/ContactUs";
 import Header from "components/Header";
+import Layout from "components/Layout";
 import { NextPage } from "next";
 
 interface Props {}
@@ -8,9 +9,10 @@ const Ourwork: NextPage<Props> = ({}) => {
   return (
     <>
       <Header title="Our work" />
-      <section className="relative md:py-24 py-16">
-        <div className="container">
-          {/* <div className="grid grid-cols-1 items-center gap-[30px]">
+      <Layout>
+        <section className="relative md:py-24 py-16">
+          <div className="container">
+            {/* <div className="grid grid-cols-1 items-center gap-[30px]">
             <div className="filters-group-wrap text-center">
               <div className="filters-group">
                 <ul className="mb-0 list-none container-filter-border-bottom filter-options">
@@ -48,48 +50,48 @@ const Ourwork: NextPage<Props> = ({}) => {
               </div>
             </div>
           </div> */}
-          {/*grid*/}
-          <div
-            id="grid"
-            className="md:grid grid-cols-3 justify-center mx-auto mt-4"
-          >
-            {Array.from({ length: 15 }).map((_, i) => (
-              <div
-                key={i}
-                className="w-full p-4 picture-item"
-                data-groups='["branding"]'
-              >
-                <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
-                  <img
-                    src={`posters/poster${i+1}.jpg`}
-                    className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
-                    alt=""
-                  />
-                  <div className="absolute inset-2 group-hover:bg-white/90 dark:group-hover:bg-slate-900/90 transition duration-500 z-0 rounded-md" />
-                  <div className="content transition-all duration-500">
-                    <div className="icon absolute z-10 hidden group-hover:block top-6 right-6 transition-all duration-500">
-                      <a
-                        href={`posters/poster${i+1}.jpg`}
-                        className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"
-                      >
-                        <i className="uil uil-camera" />
-                      </a>
-                    </div>
-                    <div className="title absolute z-10 hidden group-hover:block bottom-6 left-6">
-                      <a
-                        href="portfolio-detail-three.html"
-                        className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out"
-                      >
-                        Graphic Design
-                      </a>
-                      <p className="text-slate-400 mb-0">Posters</p>
+            {/*grid*/}
+            <div
+              id="grid"
+              className="md:grid grid-cols-3 justify-center mx-auto mt-4"
+            >
+              {Array.from({ length: 15 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="w-full p-4 picture-item"
+                  data-groups='["branding"]'
+                >
+                  <div className="group relative block overflow-hidden rounded-md transition-all duration-500">
+                    <img
+                      src={`posters/poster${i + 1}.jpg`}
+                      className="group-hover:origin-center group-hover:scale-110 group-hover:rotate-3 transition duration-500"
+                      alt=""
+                    />
+                    <div className="absolute inset-2 group-hover:bg-white/90 dark:group-hover:bg-slate-900/90 transition duration-500 z-0 rounded-md" />
+                    <div className="content transition-all duration-500">
+                      <div className="icon absolute z-10 hidden group-hover:block top-6 right-6 transition-all duration-500">
+                        <a
+                          href={`posters/poster${i + 1}.jpg`}
+                          className="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white btn-icon rounded-full lightbox"
+                        >
+                          <i className="uil uil-camera" />
+                        </a>
+                      </div>
+                      <div className="title absolute z-10 hidden group-hover:block bottom-6 left-6">
+                        <a
+                          href="portfolio-detail-three.html"
+                          className="h6 text-lg font-medium hover:text-indigo-600 duration-500 ease-in-out"
+                        >
+                          Graphic Design
+                        </a>
+                        <p className="text-slate-400 mb-0">Posters</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-          {/* <div className="grid md:grid-cols-12 grid-cols-1 mt-8">
+              ))}
+            </div>
+            {/* <div className="grid md:grid-cols-12 grid-cols-1 mt-8">
             <div className="md:col-span-12 text-center">
               <nav aria-label="Page navigation example">
                 <ul className="inline-flex items-center -space-x-px">
@@ -154,11 +156,12 @@ const Ourwork: NextPage<Props> = ({}) => {
               </nav>
             </div>
           </div> */}
-        </div>
-        {/*end container*/}
-        <ContactUs />
-        {/*end container*/}
-      </section>
+          </div>
+          {/*end container*/}
+          <ContactUs />
+          {/*end container*/}
+        </section>
+      </Layout>
     </>
   );
 };

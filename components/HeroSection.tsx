@@ -5,16 +5,16 @@ interface Props {}
 
 const HeroSection: NextPage<Props> = ({}) => {
   return (
-    <section className="relative table w-full py-36 lg:py-44">
+    <section className="relative table w-full py-36 lg:py-44 bg-gray-50">
       <div className="container">
         <div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
           <div className="md:col-span-6">
             <div className="md:mr-6">
-              <img
+              {/* <img
                 src="assets/images/logo-icon-40.png"
                 className="mb-5"
                 alt=""
-              />
+              /> */}
               <p className="text-indigo-600 text-lg font-medium mb-4">
                 We are a very dedicated team
               </p>

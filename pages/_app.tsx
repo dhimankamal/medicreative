@@ -5,9 +5,10 @@ import "dist/assets/libs/@iconscout/unicons/css/line.css";
 import "dist/assets/css/icons.css";
 import "dist/assets/css/icons.min.css";
 import "dist/assets/css/tailwind.css";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
-import { ToastContainer } from 'react-toastify';
+import { ToastContainer } from "react-toastify";
+import { AnimatePresence } from 'framer-motion'
 import type { AppProps } from "next/app";
 import Navbar from "components/Navbar";
 import Footer from "components/Footer";
@@ -19,9 +20,13 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-     <ToastContainer />
+      <ToastContainer />
       <Navbar />
-      <Component {...pageProps} />
+
+      <AnimatePresence mode="wait" initial={false}>
+        <Component {...pageProps} />
+      </AnimatePresence>
+
       <Footer />
     </>
   );

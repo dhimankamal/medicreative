@@ -4,7 +4,7 @@ interface Props {}
 
 const Testimonial: NextPage<Props> = ({}) => {
   return (
-    <section className="relative md:py-24 py-16">
+    <section className="relative md:py-24 py-16 bg-slate-50">
       <div className="container">
         <div className="grid grid-cols-1 pb-8 text-center">
           <h6 className="text-indigo-600 font-semibold mb-2">Testimonial</h6>
