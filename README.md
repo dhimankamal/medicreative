@@ -10,6 +10,7 @@ Medcreatives is built using Next.js, a robust framework for crafting server-rend
 
 - **Next.js Framework**: Offers automatic code-splitting, optimized performance, and server-side rendering of React components.
 - **Tailwind CSS**: Enables rapid creation of custom styles, ensuring a unique and visually engaging website.
+- **Framer Motion Integration**: Utilizes Framer Motion, a React animation library, for creating smooth and dynamic animations throughout the site.
 - **Nodemailer Integration**: Utilizes nodemailer, a JavaScript library, to handle and send inquiries through the contact form.
 
 ## Installation
