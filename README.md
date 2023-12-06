@@ -16,7 +16,7 @@ Medcreatives is built using Next.js, a robust framework for crafting server-rend
 
 To set up Medcreatives locally:
 
-1. Clone the repository: `git clone https://github.com/yourusername/medcreatives.git`
+1. Clone the repository: `git clone https://github.com/dhimankamal/medcreatives.git`
 2. Install dependencies: `npm install`
 3. Configure nodemailer settings in the designated files.
 4. Run the application: `npm run dev`
