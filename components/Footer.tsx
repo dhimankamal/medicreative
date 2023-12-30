@@ -25,10 +25,10 @@ const Footer: NextPage<Props> = ({}) => {
             <div className="text-center mt-0 md:mt-0">
               <p className="mb-0 capitalize">
                 © {companyInfo.name}. Design by 
-                <Link href="/" className="text-reset">
-                  {" "}kamal
+                <Link href="https://www.itskamal.dev/" className="text-reset text-indigo-300">
+                  {" "}kamal.
                 </Link>
-                .
+                
               </p>
             </div>
             <ul className="list-none md:text-right text-center my-2 md:mt-0">
